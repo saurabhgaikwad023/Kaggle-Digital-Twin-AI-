@@ -1,20 +1,29 @@
-# Digital Twin AI
+# Digital Twin AI (Gemini Edition)
 
-A simple, fully self-contained digital twin simulator for weekly planning,
-scenario generation, stress/productivity analysis, and Pareto-optimal
-recommendation.
+A lightweight simulation engine that:
+- creates a Digital Twin profile
+- generates weekly scenarios
+- simulates productivity, stress, cost & social balance
+- selects Pareto-optimal plans
+- explains top plans using Google Gemini
 
-This project includes:
+### Features
+- Simple and transparent behavioral model  
+- Pareto optimization for multi-objective planning  
+- Gemini-powered plan explanations  
+- 100% Kaggle compatible  
+- Modular src directory  
 
-- A clean, self-contained Jupyter notebook (`digital_twin_self_contained.ipynb`)
-- Optional Python modules in `src/` if you want to refactor code out of the notebook
-- Scenario generation
-- Behavioral simulation
-- Pareto-front extraction
-- Recommendation engine
-- Mock LLM explanations
-- Synthetic evaluation across users
+### Structure
+src/
+twin.py
+scenario_gen.py
+simulator.py
+evaluator.py
+gemini_agent.py
+notebook/
+digital_twin_kaggle_gemini_only.ipynb
 
-## Getting Started
 
-Install dependencies:
+### Usage
+See the notebook for a complete workflow.
