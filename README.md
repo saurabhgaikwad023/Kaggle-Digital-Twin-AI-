@@ -1,49 +1,20 @@
-# Digital Twin AI  (Gemini Integrated)
+# Digital Twin AI (Multi-Agent + Gemini optional)
 
-A complete multi-agent simulation environment for:
-- Creating a personal Digital Twin
-- Running scenario-based weekly simulations
-- Multi-objective optimization (Pareto front)
-- Agent-based planning + Gemini explanations
-- Tools, memory, sessions, observability, A2A routing
-- Suitable for Kaggle, Google Colab, or local Jupyter
+This repository contains the Digital Twin multi-agent system (notebook code converted into modular files).
 
-## Features
-✔ Multi-agent architecture  
-✔ Sequential, parallel, and loop agents  
-✔ LLM agent powered by Google Gemini  
-✔ Tools (Echo, safe Python executor)  
-✔ Persistent MemoryBank  
-✔ InMemorySessionService  
-✔ Agent-to-Agent Router (A2A)  
-✔ Observability (logging + metrics)  
-✔ Synthetic user evaluation pipeline  
-✔ Ready-to-run Kaggle notebook  
+**Features**
+- Twin dataclass, scenario generator, simulator
+- Evaluator (Pareto front, scoring)
+- MemoryBank (persistent), InMemorySessionService
+- Tools (Echo, safe Python exec)
+- Agent core (AgentManager) + GeminiAgent (optional)
+- Agent-to-Agent router (A2A)
+- Observability (metrics)
+- Plotting cells available in the notebook
 
-## Structure
-src/
-twin.py
-scenario_gen.py
-simulator.py
-evaluator.py
-memory_bank.py
-session_service.py
-tools.py
-agent_core.py
-gemini_agent.py
-a2a_router.py
-observability.py
-
-
-## Requirements
-Install via:
-pip install -r requirements.txt
-
-python
-Copy code
-
-## Using Gemini
-Set your API key:
-```python
+**Usage**
+1. Install dependencies: `pip install -r requirements.txt`
+2. (Optional) Set Gemini API key at runtime:
+```py
 import os
-os.environ["GEMINI_API_KEY"] = ""
+os.environ['GEMINI_API_KEY'] = 'YOUR_KEY'
