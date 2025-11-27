@@ -1,29 +1,49 @@
-# Digital Twin AI (Gemini Edition)
+# Digital Twin AI  (Gemini Integrated)
 
-A lightweight simulation engine that:
-- creates a Digital Twin profile
-- generates weekly scenarios
-- simulates productivity, stress, cost & social balance
-- selects Pareto-optimal plans
-- explains top plans using Google Gemini
+A complete multi-agent simulation environment for:
+- Creating a personal Digital Twin
+- Running scenario-based weekly simulations
+- Multi-objective optimization (Pareto front)
+- Agent-based planning + Gemini explanations
+- Tools, memory, sessions, observability, A2A routing
+- Suitable for Kaggle, Google Colab, or local Jupyter
 
-### Features
-- Simple and transparent behavioral model  
-- Pareto optimization for multi-objective planning  
-- Gemini-powered plan explanations  
-- 100% Kaggle compatible  
-- Modular src directory  
+## Features
+✔ Multi-agent architecture  
+✔ Sequential, parallel, and loop agents  
+✔ LLM agent powered by Google Gemini  
+✔ Tools (Echo, safe Python executor)  
+✔ Persistent MemoryBank  
+✔ InMemorySessionService  
+✔ Agent-to-Agent Router (A2A)  
+✔ Observability (logging + metrics)  
+✔ Synthetic user evaluation pipeline  
+✔ Ready-to-run Kaggle notebook  
 
-### Structure
+## Structure
 src/
 twin.py
 scenario_gen.py
 simulator.py
 evaluator.py
+memory_bank.py
+session_service.py
+tools.py
+agent_core.py
 gemini_agent.py
-notebook/
-digital_twin_kaggle_gemini_only.ipynb
+a2a_router.py
+observability.py
 
 
-### Usage
-See the notebook for a complete workflow.
+## Requirements
+Install via:
+pip install -r requirements.txt
+
+python
+Copy code
+
+## Using Gemini
+Set your API key:
+```python
+import os
+os.environ["GEMINI_API_KEY"] = ""
