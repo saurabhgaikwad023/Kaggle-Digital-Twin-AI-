@@ -1,4 +1,4 @@
-# Digital Twin Simulator
+# Digital Twin AI
 
 A simple, fully self-contained digital twin simulator for weekly planning,
 scenario generation, stress/productivity analysis, and Pareto-optimal
